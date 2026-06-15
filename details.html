@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Item Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center">Item Details</h2>
+
+<div class="card" style="margin:auto; width:300px; text-align:center">
+
+<h2 id="itemName"></h2>
+
+<p id="itemDescription"></p>
+
+<p id="itemLocation"></p>
+
+<button onclick="contactOwner()">Contact Owner</button>
+
+</div>
+
+<script>
+
+let item = JSON.parse(localStorage.getItem("selectedItem"));
+
+if(item){
+document.getElementById("itemName").innerText = item.name;
+document.getElementById("itemDescription").innerText = "Description: " + item.description;
+document.getElementById("itemLocation").innerText = "Location: " + item.location;
+}
+
+function contactOwner(){
+alert("Owner contact feature coming soon!");
+}
+
+</script>
+
+</body>
+</html>

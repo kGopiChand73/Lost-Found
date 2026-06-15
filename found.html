@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Report Found Item</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<form class="form" onsubmit="addFoundItem(event)">
+
+<h2>Report Found Item</h2>
+
+<input id="foundName" type="text" placeholder="Item Name" required>
+
+<textarea id="foundDescription" placeholder="Description"></textarea>
+
+<input id="foundLocation" type="text" placeholder="Location Found" required>
+
+<input id="foundDate" type="date" required>
+
+<input id="foundImage" type="file" required>
+
+<button type="submit">Post Item</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

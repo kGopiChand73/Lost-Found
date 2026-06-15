@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Lost & Found Portal</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<h1 class="title">Lost & Found Portal</h1>
+
+<nav class="navbar">
+
+<div class="nav-left">
+<a href="index.html">Home</a>
+<a href="lost.html">Post Lost Item</a>
+<a href="found.html">Post Found Item</a>
+</div>
+
+<div class="nav-right">
+
+<button onclick="toggleDarkMode()" class="nav-btn">🌙</button>
+
+<a href="login.html" id="loginBtn" class="nav-btn">Login</a>
+<a href="register.html" id="registerBtn" class="nav-btn">Register</a>
+
+<a href="#" onclick="logoutUser()" id="logoutBtn" class="nav-btn">Logout</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="search">
+<input type="text" placeholder="Search lost items">
+<button>Search</button>
+</section>
+
+<h3>Total Items: <span id="itemCount"></span></h3>
+
+<section class="items" id="itemsContainer"></section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

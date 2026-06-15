@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post Lost Item</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<form class="form" onsubmit="addLostItem(event)">
+
+<h2>Report Lost Item</h2>
+
+<input id="itemName" type="text" placeholder="Item Name" required>
+
+<textarea id="description" placeholder="Description"></textarea>
+
+<input id="location" type="text" placeholder="Location" required>
+
+<input id="date" type="date" required>
+
+<input id="image" type="file">
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
